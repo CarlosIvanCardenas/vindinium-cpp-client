@@ -21,7 +21,7 @@ Options parse_options(int argc, char* argv[])
         ("number-of-games,g", po::value<int>(&options.number_of_games)->default_value(1), "number of games played")
         ("training,t", po::value<bool>(&options.training_mode)->default_value(true), "training or arena")
         ("secret-key,k", po::value<std::string>(&options.secret_key)->default_value(""), "secret api key")
-        ("server,s", po::value<std::string>(&options.server_name)->default_value("vindinium.org"), "server name")
+        ("server,s", po::value<std::string>(&options.server_name)->default_value("www.aigames.host"), "server name")
         ("map,m", po::value<std::string>(&options.map_name)->default_value(""), "map name")
         ("proxy", po::value<std::string>(&options.proxy)->default_value(""), "SOCKS proxy to use (eg. localhost:4444)")
         ("collect-map", po::value<bool>(&options.collect_map)->default_value(false), "save game map");
