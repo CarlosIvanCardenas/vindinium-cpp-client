@@ -8,7 +8,11 @@ Build with CMake:
     mkdir build
     cd build
     ccmake .. #optionally config stuff
-    cd ..
     make
+    
+    TO-RUN-CLIENT:
+    ./client_random -k <YOUR-KEY>
 
-Note : this was created by crudely extracting the relevant portions of our bot. Pull requests for cleaning it are more than welcome!
+If you got errors while building install the following dependencies with:
+
+    sudo apt install libcurl4-openssl-dev libboost-all-dev
