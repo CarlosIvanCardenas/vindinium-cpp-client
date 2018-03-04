@@ -75,10 +75,10 @@ play_game(const Options& options, Rng& rng)
         double request_start_time;
         double request_end_time;
 #if defined(OPENMP_FOUND)
-        #pragma omp parallel sections default(shared) shared(new_json, request_end_time, request_start_time, continue_flag, play_end_point, play_server_name, start_time, bot, game)
+        //#pragma omp parallel sections default(shared) shared(new_json, request_end_time, request_start_time, continue_flag, play_end_point, play_server_name, start_time, bot, game)
         {
 
-            #pragma omp section
+            //#pragma omp section
 #endif
             {
                 request_start_time = get_double_time();
